@@ -1,26 +1,38 @@
-import React, { Component } from 'react';
+import React from "react";
+import Card from "./ui/Card";
+import HeaderCard from "./ui/HeaderCard";
 
-export class Home extends Component {
-  static displayName = Home.name;
-
-  render () {
-    return (
+export default function Home() {
+  return (
+    <div>
       <div>
-        <h1>Hello, world!</h1>
-        <p>Welcome to your new single-page application, built with:</p>
-        <ul>
-          <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-          <li><a href='https://facebook.github.io/react/'>React</a> for client-side code</li>
-          <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
-        </ul>
-        <p>To help you get started, we have also set up:</p>
-        <ul>
-          <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
-          <li><strong>Development server integration</strong>. In development mode, the development server from <code>create-react-app</code> runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
-          <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration produces minified, efficiently bundled JavaScript files.</li>
-        </ul>
-        <p>The <code>ClientApp</code> subdirectory is a standard React application based on the <code>create-react-app</code> template. If you open a command prompt in that directory, you can run <code>npm</code> commands such as <code>npm test</code> or <code>npm install</code>.</p>
+        <HeaderCard>This is the homepage header</HeaderCard>
       </div>
-    );
-  }
+      <div>
+        <Card BackgroundImage="https://kristineskitchenblog.com/wp-content/uploads/2018/02/waffle-recipe-1200-square-8505.jpg">
+          <h1> Breakfast </h1>
+        </Card>
+        <Card BackgroundImage="https://www.floatingkitchen.net/wp-content/uploads/2015/05/Eggplant-Zucchini-Sandwich-2-748x520.jpg">
+          <h1> Lunch </h1>
+        </Card>
+        <Card BackgroundImage="https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80">
+          <h1> Dinner </h1>
+        </Card>
+        <Card BackgroundImage="https://blessingsandgoodfood.files.wordpress.com/2015/02/img_8155.jpg">
+          <h1>Sweet Treats </h1>
+        </Card>
+        <Card BackgroundImage="https://images.unsplash.com/photo-1625928490857-5c894875a1d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hlZXNlJTIwYW5kJTIwbWVhdCUyMGJvYXJkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60">
+          <h1>Healthy Snacks </h1>
+        </Card>
+        <Card BackgroundImage="https://images.unsplash.com/photo-1588539543889-20cc7ce4df55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnJvd25pZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60">
+          {" "}
+          <h1>Desserts </h1>{" "}
+        </Card>
+        <Card BackgroundImage="https://images.unsplash.com/photo-1570696516188-ade861b84a49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c21vb3RoaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60">
+          {" "}
+          <h1>Smooties </h1>{" "}
+        </Card>
+      </div>
+    </div>
+  );
 }
