@@ -3,12 +3,15 @@ import Card from "./ui/Card";
 import HeaderCard from "./ui/HeaderCard";
 
 export default function Home() {
+  // seperating items below in seperate divs by the content
+  // with the top being header content and the following being recipe content
   return (
-    <div>
-      <div>
+    <>
+      <div className="">
         <HeaderCard>This is the homepage header</HeaderCard>
       </div>
-      <div>
+
+      <div className="recipeContent">
         <Card BackgroundImage="https://kristineskitchenblog.com/wp-content/uploads/2018/02/waffle-recipe-1200-square-8505.jpg">
           <h1> Breakfast </h1>
         </Card>
@@ -33,6 +36,6 @@ export default function Home() {
           <h1>Smooties </h1>{" "}
         </Card>
       </div>
-    </div>
+    </>
   );
 }

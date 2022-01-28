@@ -15,6 +15,7 @@ export default function Card(props) {
     backgroundRepeat: "no-repeat",
     backgroundImage: `url(${props.BackgroundImage})`,
     color: "white",
+    backgroundColor: props.BackgroundColor,
   };
 
   return <div style={cardStyle}> {props.children} </div>;
