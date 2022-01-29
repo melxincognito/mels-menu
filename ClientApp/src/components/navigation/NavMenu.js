@@ -66,9 +66,15 @@ export class NavMenu extends Component {
                     Weekly Meal Planner
                   </NavLink>
                 </NavItem>
+
                 <NavItem id="navItem">
                   <NavLink tag={Link} className="text-light" to="/myFavorites">
                     My Favorites
+                  </NavLink>
+                </NavItem>
+                <NavItem id="navItem">
+                  <NavLink tag={Link} className="text-light" to="/addRecipe">
+                    Add New Recipe
                   </NavLink>
                 </NavItem>
                 <NavItem id="navItem">

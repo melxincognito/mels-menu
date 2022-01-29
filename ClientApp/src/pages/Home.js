@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../components/ui/Card";
 import HeaderCard from "../components/ui/HeaderCard";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   // seperating items below in seperate divs by the content
@@ -13,7 +14,7 @@ export default function Home() {
 
       <div className="recipeContent">
         <Card BackgroundImage="https://kristineskitchenblog.com/wp-content/uploads/2018/02/waffle-recipe-1200-square-8505.jpg">
-          <button className="btn btn-outline-light">
+          <button className="btn btn-outline-light" tag={Link} to="/menuItems">
             <h1> Breakfast </h1>
           </button>
         </Card>
