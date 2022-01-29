@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Route } from "react-router";
-import { Layout } from "./components/Layout";
-import Home from "./components/Home";
-import { FetchData } from "./components/FetchData";
-import { Counter } from "./components/Counter";
+import { Layout } from "./components/navigation/Layout";
+import Home from "./pages/Home";
+import { FetchData } from "./pages/FetchData";
+import { Counter } from "./pages/Counter";
 import Login from "./pages/Login";
 import MyFavorites from "./pages/MyFavorites";
 import "./custom.css";

@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./ui/Card";
-import HeaderCard from "./ui/HeaderCard";
+import Card from "../components/ui/Card";
+import HeaderCard from "../components/ui/HeaderCard";
 
 export default function Home() {
   // seperating items below in seperate divs by the content
