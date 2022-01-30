@@ -1,20 +1,25 @@
 import React from "react";
 import Card from "../components/ui/Card";
-import HeaderCard from "../components/ui/HeaderCard";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   // seperating items below in seperate divs by the content
   // with the top being header content and the following being recipe content
   return (
     <>
-      <div className="">
-        <HeaderCard>This is the homepage header</HeaderCard>
+      <div>
+        <Card BackgroundColor="PaleVioletRed" height="120px">
+          <h4>Select the type of recipes you want to browse through below!</h4>
+        </Card>
       </div>
 
       <div className="recipeContent">
+        <Card BackgroundImage="https://images.unsplash.com/photo-1619895092538-128341789043?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
+          <button className="btn btn-outline-light">
+            <h1> See All Menu Items </h1>
+          </button>
+        </Card>
         <Card BackgroundImage="https://kristineskitchenblog.com/wp-content/uploads/2018/02/waffle-recipe-1200-square-8505.jpg">
-          <button className="btn btn-outline-light" tag={Link} to="/menuItems">
+          <button className="btn btn-outline-light">
             <h1> Breakfast </h1>
           </button>
         </Card>

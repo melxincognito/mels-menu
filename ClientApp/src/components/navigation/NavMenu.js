@@ -62,6 +62,11 @@ export class NavMenu extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem id="navItem">
+                  <NavLink tag={Link} className="text-light" to="/addRecipe">
+                    Add New Recipe
+                  </NavLink>
+                </NavItem>
+                <NavItem id="navItem">
                   <NavLink tag={Link} className="text-light" to="/mealPlanner">
                     Weekly Meal Planner
                   </NavLink>
@@ -72,11 +77,7 @@ export class NavMenu extends Component {
                     My Favorites
                   </NavLink>
                 </NavItem>
-                <NavItem id="navItem">
-                  <NavLink tag={Link} className="text-light" to="/addRecipe">
-                    Add New Recipe
-                  </NavLink>
-                </NavItem>
+
                 <NavItem id="navItem">
                   <NavLink tag={Link} className="text-light" to="/login">
                     Log In / Sign Up
