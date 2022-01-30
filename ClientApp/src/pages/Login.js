@@ -1,21 +1,19 @@
 import React, { Component } from "react";
 import Card from "../components/ui/Card";
+import LoginForm from "../components/forms/LoginForm";
 
 export default class Login extends Component {
   render() {
     return (
       <div>
-        <Card BackgroundColor="black">
-          <div className="d-grid gap-2 col-6 mx-auto">
-            <button className="btn btn-warning" type="button">
-              Log In
-            </button>
-            <button className="btn btn-outline-light" type="button">
-              Sign Up
-            </button>
-          </div>
+        <Card BackgroundColor="PaleVioletRed" height="100px">
+          {" "}
+          <h2> Log in to your account</h2>
         </Card>
-        <Card BackgroundColor="gray">
+        <Card BackgroundColor="black" height="320px">
+          <LoginForm />
+        </Card>
+        <Card BackgroundColor="PaleVioletRed">
           <div className="d-grid gap-2 col-6 mx-auto">
             Anyone can use our site to browse recipes & share them with friends.
             However, registered users will have access to our weekly meal
