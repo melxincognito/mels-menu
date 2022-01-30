@@ -5,22 +5,36 @@ import { Form, Button } from "react-bootstrap";
 
 export default function LoginForm() {
   return (
-    <Form>
-      <Form.Group className="mb-3" controlId="loginEmailInput">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="email@email.com" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="loginUserPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password1234" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Keep Me Logged In" />
-      </Form.Group>
-      <Button variant="outline-light">Log In</Button>
-    </Form>
+    <>
+      <Form>
+        <Form.Group className="mb-3" controlId="loginUsernameInput">
+          <Form.Label>Username</Form.Label>
+          <Form.Control type="name" placeholder="@myUsername" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="loginUserPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="Password1234" />
+
+          <Form.Text className="text-muted">
+            {" "}
+            {/* current href link is a placeholder. Make a form and navigation link later for forgot password*/}
+            Forgot password?{" "}
+            <a href="/menuItems" target="_blank">
+              {" "}
+              click here
+            </a>
+          </Form.Text>
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Keep Me Logged In" />
+        </Form.Group>
+        <div className="d-grid gap-2 mt-4">
+          <Button variant="outline-light" size="lg">
+            Log In
+          </Button>
+        </div>
+      </Form>
+    </>
   );
 }
