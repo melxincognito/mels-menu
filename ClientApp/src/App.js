@@ -7,6 +7,7 @@ import { Counter } from "./pages/Counter";
 import Login from "./pages/Login";
 import MyFavorites from "./pages/MyFavorites";
 import AddRecipe from "./pages/AddRecipe";
+import ForgotPassword from "./pages/ForgotPassword";
 import "./custom.css";
 
 export default class App extends Component {
@@ -21,6 +22,7 @@ export default class App extends Component {
         <Route path="/myFavorites" component={MyFavorites} />
         <Route path="/login" component={Login} />
         <Route path="/addRecipe" component={AddRecipe} />
+        <Route path="/forgotPassword" component={ForgotPassword} />
       </Layout>
     );
   }

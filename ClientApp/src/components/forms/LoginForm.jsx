@@ -9,7 +9,7 @@ export default function LoginForm() {
       <Form>
         <Form.Group className="mb-3" controlId="loginUsernameInput">
           <Form.Label>Username</Form.Label>
-          <Form.Control type="name" placeholder="@myUsername" />
+          <Form.Control type="name" placeholder="@my-username" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="loginUserPassword">
           <Form.Label>Password</Form.Label>
@@ -17,12 +17,7 @@ export default function LoginForm() {
 
           <Form.Text className="text-muted">
             {" "}
-            {/* current href link is a placeholder. Make a form and navigation link later for forgot password*/}
-            Forgot password?{" "}
-            <a href="/menuItems" target="_blank">
-              {" "}
-              click here
-            </a>
+            Forgot password? <a href="/forgotPassword"> click here</a>
           </Form.Text>
         </Form.Group>
 
