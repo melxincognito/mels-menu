@@ -23,12 +23,13 @@ Breakfast, Lunch, Dinner, Snacks, Desserts, Smoothies
 
 # Recipe Categories
 
-Under 20 minutes
-Minimal handling
 Vegetarian/Vegan
 Beef
 Chicken
 Turkey
+Comfort Foods
+Healthy Bites
+Quick Fixes
 
 # Recipe Tags
 
