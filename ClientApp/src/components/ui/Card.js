@@ -5,9 +5,9 @@ export default function Card(props) {
   var cardStyle = {
     height: props.height,
     borderRadius: "6px",
-    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.493);",
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.493)",
     margin: "10px",
-    display: "flex",
+    display: props.display,
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
@@ -26,4 +26,5 @@ export default function Card(props) {
 Card.defaultProps = {
   height: 275,
   BackgroundColor: "PaleVioletRed",
+  display: "flex",
 };
