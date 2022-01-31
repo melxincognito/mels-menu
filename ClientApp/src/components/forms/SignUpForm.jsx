@@ -1,7 +1,15 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 export default function SignUpForm() {
+  let history = useHistory();
+
+  const newAccountSignupClick = () => {
+    let path = `/signUpSuccessful`;
+    history.push(path);
+  };
+
   return (
     <>
       <Form id="signUpForm">
@@ -34,7 +42,7 @@ export default function SignUpForm() {
           </div>
         </Form.Group>
         <div className="d-grid gap-2 mt-4">
-          <Button variant="light" size="lg">
+          <Button variant="light" size="lg" onClick={newAccountSignupClick}>
             Sign Up
           </Button>
         </div>
