@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 export default function SignUpForm() {
   return (
     <>
-      <Form>
+      <Form id="signUpForm">
         <Form.Group className="mb-3" controlId="signUpUsernameInput">
           <Form.Label>1. Pick a username</Form.Label>
           <Form.Control type="name" placeholder="@your-new-username73" />
@@ -23,6 +23,7 @@ export default function SignUpForm() {
         </Form.Group>
         <Form.Group className="display-flex" controlId="formBasicCheckbox">
           <div style={{ display: "flex" }}>
+            <Form.Check type="checkbox" />
             <Form.Text className="text-muted">
               {" "}
               4. Agree to sites{" "}
@@ -30,7 +31,6 @@ export default function SignUpForm() {
                 Terms & Conditions
               </a>
             </Form.Text>
-            <Form.Check type="checkbox" />
           </div>
         </Form.Group>
         <div className="d-grid gap-2 mt-4">

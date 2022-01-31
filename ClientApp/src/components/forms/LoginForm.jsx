@@ -17,11 +17,11 @@ export default function LoginForm() {
 
           <Form.Text className="text-muted">
             {" "}
-            Forgot password? <a href="/forgotPassword"> click here</a>
+            Forgot password? <a href="/forgotPassword"> Click here</a>
           </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Group className="mb-3" controlId="stayLoggedInCheck">
           <Form.Check type="checkbox" label="Keep Me Logged In" />
         </Form.Group>
         <div className="d-grid gap-2 mt-4">

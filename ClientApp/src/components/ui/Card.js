@@ -5,11 +5,13 @@ export default function Card(props) {
   var cardStyle = {
     height: props.height,
     borderRadius: "6px",
-    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.2)",
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.493);",
     margin: "10px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    alignContent: "center",
+    justifyItems: "center",
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -23,4 +25,5 @@ export default function Card(props) {
 
 Card.defaultProps = {
   height: 275,
+  BackgroundColor: "PaleVioletRed",
 };

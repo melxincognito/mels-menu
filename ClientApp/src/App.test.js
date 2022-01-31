@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import App from "./App";
-import Home from "./components/Home";
+import Home from "./pages/Home";
+import SignUpForm from "./components/forms/SignUpForm";
 
 it("renders without crashing", async () => {
   const div = document.createElement("div");
@@ -21,6 +22,12 @@ it("renders without crashing", async () => {
 describe("HomePage", () => {
   test("renders main homepage component", () => {
     render(<Home />);
+  });
+});
+
+describe("Login/Sign Up Page", () => {
+  test("renders signup form", () => {
+    render(<SignUpForm />);
     screen.debug();
   });
 });

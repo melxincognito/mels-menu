@@ -8,10 +8,10 @@ export default function AddRecipe() {
   return (
     <div>
       {" "}
-      <Card BackgroundColor="gray" height="400px">
+      <Card BackgroundColor="black" height="400px">
         <AddRecipeForm />
       </Card>
-      <Card BackgroundColor="purple" height="400px">
+      <Card height="400px">
         <OtherRecipeDetailsForm />
       </Card>
     </div>
