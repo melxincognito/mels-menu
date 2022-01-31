@@ -5,6 +5,7 @@ import { MemoryRouter } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/Home";
 import SignUpForm from "./components/forms/SignUpForm";
+import LoginForm from "./components/forms/LoginForm";
 
 it("renders without crashing", async () => {
   const div = document.createElement("div");
@@ -26,8 +27,14 @@ describe("HomePage", () => {
 });
 
 describe("Login/Sign Up Page", () => {
-  test("renders signup form", () => {
+  test("renders Signup form", () => {
     render(<SignUpForm />);
+  });
+});
+
+describe("Login/Sign Up Page", () => {
+  test("renders Login form", () => {
+    render(<LoginForm />);
     screen.debug();
   });
 });
