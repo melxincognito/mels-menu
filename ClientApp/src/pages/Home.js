@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <div>
-        <Card BackgroundColor="PaleVioletRed" height="120px">
-          <h4>Select the type of recipes you want to browse through below!</h4>
+        <Card BackgroundColor="PaleVioletRed" height="50px">
+          <label>Browse through our assortment of Menu Items</label>
         </Card>
       </div>
 
@@ -53,6 +53,11 @@ export default function Home() {
           {" "}
           <button className="btn btn-outline-light">
             <h1>Smooties </h1>
+          </button>{" "}
+        </Card>
+        <Card BackgroundImage="https://images.unsplash.com/photo-1561668048-fe9c092832e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FsYW1pJTIwYW5kJTIwYnJpZSUyMGNoZWVzZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60">
+          <button className="btn btn-outline-dark">
+            <h1>Depression Meals </h1>
           </button>{" "}
         </Card>
       </div>

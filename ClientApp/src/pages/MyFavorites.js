@@ -10,7 +10,7 @@ export default class MyFavorites extends Component {
           {" "}
           My Favorites{" "}
         </Card>
-        <Card BackgroundColor="gray">
+        <Card BackgroundColor="gray" height="50px">
           Log in or Sign Up to save recipes to your favorites!
         </Card>
       </div>
