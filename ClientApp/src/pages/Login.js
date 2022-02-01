@@ -19,17 +19,17 @@ export default class Login extends Component {
           <h2>Don't have an account?</h2>
         </Card>
         <Card BackgroundColor="black" height="50px">
-          <h4> Sign Up with the form below!</h4>
+          <h4> Sign Up by filling out the form below!</h4>
         </Card>
         <Card height="450px">
           <SignUpForm />
         </Card>
-        <Card>
+        <Card BackgroundColor="black">
           <div className="d-grid gap-2 col-6 mx-auto">
             Anyone can use our site to browse recipes & share them with friends.
-            However, registered users will have access to our weekly meal
+            However, only registered users will have access to our weekly meal
             planner, be able to save favorite recipes and have the option to
-            receive email updates when new recipes are uploaded to the site.
+            receive email updates when new recipes are uploaded.
           </div>
         </Card>
       </div>
